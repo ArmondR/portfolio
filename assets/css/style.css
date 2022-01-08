@@ -51,36 +51,40 @@ header nav ul li a {
 
 }
 
+section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+}
+
 .content-article{
     display: flex;
     margin: 35px;
 }
 
-main {
-    display: flex;
-    flex-wrap:wrap;
-    justify-content: center;
-   
-}
 
 .work{
-    /* justify-content: center; */
+   
     color:var(--primary-color);
-    margin: 35px;   
+    margin: 35px; 
+    position: relative; 
+    display: flex;
 }
-
+/*
 .main-shown{
     position:relative;
 }
+*/
 
+/*
 .main-shown img{
    height:400px;
    width: 800px;
     margin: 10px;
     border: 5px solid var(--primary-color);
-}
+}*/
 
-/* main project image name-tag */
+/* main project image name-tag 
 .main-shown::before {
     content: "Run-Buddy";
     background-color: var(--primary-color);
@@ -92,19 +96,29 @@ main {
     position: absolute;
     bottom:30px;
     left:0;
+}*/
+
+div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    
+} 
+
+.work-shown {
+    position:relative;
+    flex-basis: 49%;
 }
 
 .work-shown img{
-    height:200px;
-    width:400px;
+    width:100%;
     margin: 10px;
     border: 5px solid var(--primary-color);
 }
 
-.work-shown {
-    position:relative;
+#main-proj {
+    flex-basis: 100%;
 }
-
 /* project image tags */
 .tag {
     margin:10px;
@@ -113,17 +127,21 @@ main {
     height:35px;
     width:75px;
     color:black;
-    font-size: 13px;
+    font-size: 11px;
     position: absolute;
-    bottom: 20px;        
+    bottom: 20px;
+    left: 0px;
+    text-align: center; 
+
 }
 
 .content-header{
     color:var(--primary-color);
     font-size: 25px;
     border-right: 3px solid;
-    padding: 0 20px 0 0;
-    margin-right: 20px;
+    /* height: 100%; */
+    padding: 0 20px 0 0; 
+     margin-right: 20px; 
 }
 
 .contact {
@@ -138,6 +156,47 @@ footer i {
 
 footer h3 {
     margin: auto 35px;
+}
+    
+@media screen and (max-width: 375px){
+    .work-shown {
+        flex-basis: 100%;
+    }
+
+    .work{
+        flex-direction: column;
+    }
+
+    .content-header {
+        /* border-bottom: 3px solid;
+        border-right: none;
+        text-align:center;
+        margin: 5px auto; */
+        flex-basis: 100%;
+        background-color: var(---tertiary-color);
+        width: 100%;
+        border: none;
+        padding: 10px;
+        text-align: center;
+        
+    }
+
+    header nav ul li a { 
+        font-size: 3vw;
+   }
+
+    .content-article {
+        flex-direction: column;
+    }
+
+    /* .contact {
+        flex-direction: column; 
+    } */
+
+    .content-article p {
+        margin: 10px;
+    }
+
 }
 
 
