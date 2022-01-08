@@ -1,0 +1,149 @@
+:root {
+    --primary-color: #55c8de;
+    --secondary-color: #ffffff;
+    ---tertiary-color: #000000;
+}
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: var(--primary-color);
+    background-size: cover;
+    padding: 20px 35px;
+    display:flex; 
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+header h1 {
+    font-weight: bold;
+    margin: 0;
+    font-size: 36px;
+    color: var(--secondary-color);
+}
+
+header a {
+    text-decoration: none;
+    color: var(--tertiary-color);
+}
+
+header nav {
+    margin: 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header nav ul li a { 
+     padding: 10px 15px;
+     font-size: 1.55vw;
+     font-weight: lighter;
+
+}
+
+.content-article{
+    display: flex;
+    margin: 35px;
+}
+
+main {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+   
+}
+
+.work{
+    /* justify-content: center; */
+    color:var(--primary-color);
+    margin: 35px;   
+}
+
+.main-shown{
+    position:relative;
+}
+
+.main-shown img{
+   height:400px;
+   width: 800px;
+    margin: 10px;
+    border: 5px solid var(--primary-color);
+}
+
+/* main project image name-tag */
+.main-shown::before {
+    content: "Run-Buddy";
+    background-color: var(--primary-color);
+    margin:15px;
+    padding:20px;
+    text-align:center;
+    font-weight: bold;
+    color:black;
+    position: absolute;
+    bottom:30px;
+    left:0;
+}
+
+.work-shown img{
+    height:200px;
+    width:400px;
+    margin: 10px;
+    border: 5px solid var(--primary-color);
+}
+
+.work-shown {
+    position:relative;
+}
+
+/* project image tags */
+.tag {
+    margin:10px;
+    padding:10px;
+    background-color: var(--primary-color);
+    height:35px;
+    width:75px;
+    color:black;
+    font-size: 13px;
+    position: absolute;
+    bottom: 20px;        
+}
+
+.content-header{
+    color:var(--primary-color);
+    font-size: 25px;
+    border-right: 3px solid;
+    padding: 0 20px 0 0;
+    margin-right: 20px;
+}
+
+.contact {
+    display: flex;
+}
+
+footer i {
+    font-size: 30px;
+    margin: 10px;
+    padding: 10px;
+}
+
+footer h3 {
+    margin: auto 35px;
+}
+
+
+
+
+
+
+
+
