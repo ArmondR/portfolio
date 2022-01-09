@@ -200,7 +200,7 @@ footer h3 {
      .contact {
         display: block;
         justify-content: center;
-        background-color: lightslategray;
+        background-color: var(--primary-color);
     } 
 
     .contact h3 {
