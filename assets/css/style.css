@@ -1,7 +1,8 @@
 :root {
     --primary-color: #55c8de;
     --secondary-color: #ffffff;
-    ---tertiary-color: #000000;
+    ---tertiary-color: #024e76;
+
 }
 
 * {
@@ -80,15 +81,16 @@ section {
 }
 
 .project-container {
+    display: flex;
     flex-wrap: wrap;
     justify-content:space-between;
 }
 
- div {
-     display: flex; 
+  .project-container a {
+      display: flex;  
      flex-wrap: wrap;
-    justify-content:space-between;  
-}
+    /* justify-content:space-between;   */
+} 
 
 .work-shown {
      position:relative; 
@@ -98,8 +100,12 @@ section {
 .work-shown img{
     width:100%;
     margin: 0 10px 10px; 
-    border: 5px solid var(--primary-color);
+    border: 2px solid var(---tertiary-color);
     border-radius: 10px;
+}
+
+.work-shown img:hover {
+    border: 5px solid var(--primary-color);
 }
 
 #main-proj {
@@ -110,10 +116,10 @@ section {
 .tag {
     margin:10px;
     padding:10px;
-    background-color: var(--primary-color);
+    background-color: var(---tertiary-color);
     height:35px;
     width:75px;
-    color:black;
+    color: var(--primary-color);
     font-size: 11px;
     position: absolute;
     bottom: 20px;
@@ -121,6 +127,12 @@ section {
     text-align: center; 
 
 }
+
+ .tag:hover {
+    color: var(---tertiary-color);
+    background-color: var(--primary-color);
+} 
+
 
 .content-header{
     color:var(--primary-color);
@@ -151,6 +163,11 @@ footer h3 {
      color: inherit;
     text-decoration:none;
 }
+
+.icons i:hover{
+    color: var(--primary-color);
+}
+
     
 @media screen and (max-width: 375px){
     .work-shown {
@@ -196,9 +213,14 @@ footer h3 {
         justify-content: center;
         background-color: var(--primary-color);
     } 
-
+   
     .contact h3 {
         margin: 0 auto;
+    }
+
+   .icons{
+        display:flex;
+        justify-content: space-around;
     }
 
     .content-article p {
@@ -206,7 +228,7 @@ footer h3 {
     }
 
     .tag {
-        left: -6px;
+        left: -10px;
     }
 
 
