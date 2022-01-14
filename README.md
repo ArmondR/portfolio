@@ -20,9 +20,9 @@ The website was deployed through github and can be accessed via the provided lin
 
 ## Screenshots
 
-![img1](assets/images/Screen Shot 1.png)
+![img1](Screen Shot 1.png)
 
-![img2](assets/images/Screen Shot 2.png)
+![img2](Screen Shot 2.png)
 
 ## Credits 
 
