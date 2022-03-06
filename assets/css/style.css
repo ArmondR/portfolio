@@ -117,14 +117,15 @@ section {
     margin:10px;
     padding:10px;
     background-color: var(---tertiary-color);
-    height:35px;
-    width:75px;
+    /* height:35px; */
+    /* width:75px; */
     color: var(--primary-color);
-    font-size: 11px;
+    font-size: 1.2vw;
     position: absolute;
     bottom: 20px;
     left: 0px;
     text-align: center; 
+    
 
 }
 
